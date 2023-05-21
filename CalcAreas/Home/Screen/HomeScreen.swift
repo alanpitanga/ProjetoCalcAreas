@@ -9,6 +9,8 @@ import UIKit
 import Tanjiro
 
 class HomeScreen: UIView {
+    public weak var delegate: ScreenBrowserDelegate?
+    
     private let labelTextSelectArea = UILabel().with {
         $0.text = "Selecione qual área calcular"
         $0.textColor = .orange
@@ -17,18 +19,23 @@ class HomeScreen: UIView {
     }
     
     private let squareButton = UIButton().with {
+        $0.layer.cornerRadius = 8
         $0.backgroundColor = .blue
+        $0.addTarget(self, action: #selector(touchButton), for: .touchUpInside)
     }
     
     private let circleButton = UIButton().with {
+        $0.layer.cornerRadius = 8
         $0.backgroundColor  = .yellow
     }
     
     private let rectangleButton = UIButton().with {
+        $0.layer.cornerRadius = 8
         $0.backgroundColor = .green
     }
     
     private let triangleButton = UIButton().with {
+        $0.layer.cornerRadius = 8
         $0.backgroundColor = .white
     }
     
@@ -58,6 +65,11 @@ class HomeScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func touchButton() {
+        delegate?.delegateAction()
+        print("touched")
     }
     
     private func configureConstraints(){
