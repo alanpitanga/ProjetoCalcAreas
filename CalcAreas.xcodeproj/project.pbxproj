@@ -17,6 +17,9 @@
 		627A397B29D7C16C00AF8BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627A397929D7C16C00AF8BDD /* LaunchScreen.storyboard */; };
 		627A398329D7C65100AF8BDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A398229D7C65100AF8BDD /* HomeViewController.swift */; };
 		627A398729D7C74800AF8BDD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A398629D7C74800AF8BDD /* HomeScreen.swift */; };
+		62D75B902A1A8B5F00A732D0 /* CalcAreasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D75B8F2A1A8B5F00A732D0 /* CalcAreasCoordinator.swift */; };
+		62D75B922A1A8B7D00A732D0 /* CalcAreasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D75B912A1A8B7D00A732D0 /* CalcAreasPresenter.swift */; };
+		62D75B942A1A8C0B00A732D0 /* CalcAreasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D75B932A1A8C0B00A732D0 /* CalcAreasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		627A397C29D7C16C00AF8BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627A398229D7C65100AF8BDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		627A398629D7C74800AF8BDD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		62D75B8F2A1A8B5F00A732D0 /* CalcAreasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAreasCoordinator.swift; sourceTree = "<group>"; };
+		62D75B912A1A8B7D00A732D0 /* CalcAreasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAreasPresenter.swift; sourceTree = "<group>"; };
+		62D75B932A1A8C0B00A732D0 /* CalcAreasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAreasViewController.swift; sourceTree = "<group>"; };
 		BA0CB622FC304B07C5A59CD9 /* Pods-CalcAreas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalcAreas.release.xcconfig"; path = "Target Support Files/Pods-CalcAreas/Pods-CalcAreas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,12 +101,15 @@
 			isa = PBXGroup;
 			children = (
 				627A396E29D7C16B00AF8BDD /* AppDelegate.swift */,
-				627A397029D7C16B00AF8BDD /* SceneDelegate.swift */,
-				627A398429D7C6C800AF8BDD /* Home */,
-				6257AFE429DB65510095155A /* GlassCalcArea */,
 				627A397729D7C16C00AF8BDD /* Assets.xcassets */,
-				627A397929D7C16C00AF8BDD /* LaunchScreen.storyboard */,
+				62D75B8F2A1A8B5F00A732D0 /* CalcAreasCoordinator.swift */,
+				62D75B912A1A8B7D00A732D0 /* CalcAreasPresenter.swift */,
+				62D75B932A1A8C0B00A732D0 /* CalcAreasViewController.swift */,
+				6257AFE429DB65510095155A /* GlassCalcArea */,
+				627A398429D7C6C800AF8BDD /* Home */,
 				627A397C29D7C16C00AF8BDD /* Info.plist */,
+				627A397929D7C16C00AF8BDD /* LaunchScreen.storyboard */,
+				627A397029D7C16B00AF8BDD /* SceneDelegate.swift */,
 			);
 			path = CalcAreas;
 			sourceTree = "<group>";
@@ -254,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D75B942A1A8C0B00A732D0 /* CalcAreasViewController.swift in Sources */,
+				62D75B922A1A8B7D00A732D0 /* CalcAreasPresenter.swift in Sources */,
+				62D75B902A1A8B5F00A732D0 /* CalcAreasCoordinator.swift in Sources */,
 				6257AFEA29DB694C0095155A /* ScreenSquare.swift in Sources */,
 				627A396F29D7C16B00AF8BDD /* AppDelegate.swift in Sources */,
 				6257AFEC29DC50B50095155A /* ScreenBrowserDelegate.swift in Sources */,

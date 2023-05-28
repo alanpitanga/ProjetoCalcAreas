@@ -1,10 +1,3 @@
-//
-//  HomeScreenViewController.swift
-//  CalcAreas
-//
-//  Created by HITSS on 31/03/23.
-//
-
 import UIKit
 import Tanjiro
 

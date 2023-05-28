@@ -1,10 +1,3 @@
-//
-//  ScreenSquare.swift
-//  CalcAreas
-//
-//  Created by HITSS on 03/04/23.
-//
-
 import Tanjiro
 import UIKit
 
