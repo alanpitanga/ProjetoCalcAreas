@@ -15,12 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let viewController = HomeViewController()
-        
-        
-        let navigation = UINavigationController(rootViewController: viewController)
-        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
+
+        
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
+
+        
+        let coordinator = CalcAreasCoordinator(navigationController: navigationController)
+        coordinator.start()
+                
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
