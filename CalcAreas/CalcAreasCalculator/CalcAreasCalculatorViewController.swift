@@ -1,11 +1,11 @@
 import UIKit
 
-final class SquareViewController: UIViewController {
+final class CalcAreasCalculatorViewController: UIViewController {
    
-    var screenSquare = ScreenSquare()
+    var screenCalculator = CalcAreasCalculatorView()
     
     override func loadView() {
-        view = screenSquare
+        self.view = screenCalculator
     }
     
     override func viewDidLoad() {
