@@ -23,8 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         
         let coordinator = CalcAreasCoordinator(navigationController: navigationController)
-        coordinator.start()
-                
+        coordinator.start()                
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
