@@ -7,10 +7,13 @@ final class CalcAreasCalculatorView: UIView {
         $0.backgroundColor = .darkGray
     }
     
-    private let lbResult = UILabel().with {
+    private let viewResult = UIView().with {
         $0.backgroundColor = .green
-        $0.textAlignment = .center
         $0.layer.cornerRadius = 8
+    }
+    
+    private let lbResult = UILabel().with {
+        $0.text = "Result"
     }
     
     private let txSide = UITextField().with {
@@ -28,7 +31,7 @@ final class CalcAreasCalculatorView: UIView {
     
     func configureConstrants() {
         addSubview(image)
-        addSubview(lbResult)
+        addSubview(viewResult)
         addSubview(txSide)
         
         
@@ -40,7 +43,7 @@ final class CalcAreasCalculatorView: UIView {
             
         }
         
-        lbResult.layout {
+        viewResult.layout {
             $0.top.equal(to: image.bottomAnchor, offsetBy: 44)
             $0.leading.equalToSuperView(17)
             $0.trailing.equalToSuperView(-16)
