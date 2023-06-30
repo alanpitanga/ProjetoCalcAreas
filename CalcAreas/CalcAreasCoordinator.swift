@@ -9,7 +9,7 @@ final class CalcAreasCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = CalcAreasViewController()
+        let viewController = CalcAreasViewController(presenter: CalcAreasPresenterProtocol)
         
         self.navigationController.pushViewController(viewController, animated: true)
     }
